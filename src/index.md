@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: blob:https://web.telegram.org/9fa0f6ae-c361-49c8-8572-90485f8af4b8
+heroImage: blob:logo.jpg
 tagline: Данный репозиторий - первый список материалов Junior Gate
 actionText: Quick Start →
 actionLink: /api/
