@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Работа с гит. | JCourse</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="JCourse">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+    <link rel="preload" href="/assets/css/0.styles.0474d49c.css" as="style"><link rel="preload" href="/assets/js/app.c171d8f1.js" as="script"><link rel="preload" href="/assets/js/2.eeb24f79.js" as="script"><link rel="preload" href="/assets/js/17.d7769199.js" as="script"><link rel="prefetch" href="/assets/js/10.945c2a6f.js"><link rel="prefetch" href="/assets/js/11.7016af92.js"><link rel="prefetch" href="/assets/js/12.a8218426.js"><link rel="prefetch" href="/assets/js/13.e240e57b.js"><link rel="prefetch" href="/assets/js/14.2ef5f696.js"><link rel="prefetch" href="/assets/js/15.3c112b5a.js"><link rel="prefetch" href="/assets/js/16.558a75c1.js"><link rel="prefetch" href="/assets/js/18.2c63847e.js"><link rel="prefetch" href="/assets/js/3.a1e4df39.js"><link rel="prefetch" href="/assets/js/4.752b9ce9.js"><link rel="prefetch" href="/assets/js/5.e4342579.js"><link rel="prefetch" href="/assets/js/6.e86df8f9.js"><link rel="prefetch" href="/assets/js/7.fe8cb8c7.js"><link rel="prefetch" href="/assets/js/8.098c0662.js"><link rel="prefetch" href="/assets/js/9.d36695e5.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.0474d49c.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">JCourse</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/api/" class="nav-link">
+  API
+</a></div><div class="nav-item"><a href="/config/" class="nav-link">
+  Config
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/api/" class="nav-link">
+  API
+</a></div><div class="nav-item"><a href="/config/" class="nav-link">
+  Config
+</a></div> <!----></nav>  <!----> </aside> <main class="page"> <div class="theme-default-content content__default"><h3 id="работа-с-гит"><a href="#работа-с-гит" class="header-anchor">#</a> Работа с гит.</h3> <h4 id="именования"><a href="#именования" class="header-anchor">#</a> Именования</h4> <p>В большинстве проектов есть четкая договоренность по именованию веток и коммитов, ее необходимо соблюдать.</p> <p>Вот, как мы называем ветки и сообщения коммитов в наших проектах.</p> <p>Ветка:
+тип задачи + 2 нижних подчеркивания + имя задачи(слова отделяются нижним подчеркиванием, нижний регистр)</p> <p>Например:</p> <div class="language- extra-class"><pre class="language-text"><code>feat__button_component
+</code></pre></div><p>Основные типы задач feat, bug, refactor.
+Например:</p> <div class="language- extra-class"><pre class="language-text"><code>fix__bug_with_reload
+refactor__profile_page
+</code></pre></div><p>Коммит:
+глагол(настоящее время) + описание</p> <p>Например,</p> <div class="language- extra-class"><pre class="language-text"><code>add modal component
+
+fix bug with container
+
+refactor logo component
+</code></pre></div><p>И т.д</p> <p>Для тех кто раньше не работал с ветками:
+(сначало клонируем репо)</p> <ol><li>Перейти в ветку develop:</li></ol> <blockquote><p><code>git checkout develop</code></p></blockquote> <ol start="2"><li>Получаем актуальную версию ветки</li></ol> <blockquote><p><code>git pull</code></p></blockquote> <ol start="3"><li>Создаем ветку для задачи:</li></ol> <blockquote><p><code>git checkout -b feat__task_name</code></p></blockquote> <ol start="4"><li>Сохранить написанный код для будущего коммита</li></ol> <blockquote><p><code>git add file1.js file2.js</code></p></blockquote> <p>либо сохраняем все файлы но только когда это необходимо:</p> <blockquote><p><code>git add .</code></p></blockquote> <ol start="5"><li>Делаем коммит:</li></ol> <blockquote><p><code>git commit -m ‘add header component’</code></p></blockquote> <ol start="6"><li>Отправить ветку в github:</li></ol> <blockquote><p><code>git push origin feat_task_name</code></p></blockquote> <ol start="7"><li>Вернуться в develop:</li></ol> <blockquote><p><code>git checkout develop</code></p></blockquote> <ol start="8"><li>Обновить данные с репо:</li></ol> <blockquote><p><code>git pull</code></p></blockquote> <p>В гитхаб добавить pull request вашей ветки:</p> <ol><li>Открываете в гитхаб /pulls</li> <li>Нажимаете create pull request (зеленая кнопка)</li> <li>Выбираете base: develop , compare: your_branch_name</li></ol></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.c171d8f1.js" defer></script><script src="/assets/js/2.eeb24f79.js" defer></script><script src="/assets/js/17.d7769199.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+{
+  "name": "jcourse",
+  "version": "0.0.1",
+  "description": "JCourse",
+  "main": "index.js",
+  "authors": {
+    "name": "E5war5IT",
+    "email": ""
+  },
+  "repository": "https://github.com/Junior-gate/jCourse/",
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build src"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "gh-pages": "^3.1.0",
+    "vuepress": "^1.9.7"
+  }
+}
