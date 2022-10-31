@@ -3,7 +3,7 @@ home: true
 heroImage: blob:logo.jpg
 tagline: Данный репозиторий - первый список материалов Junior Gate
 actionText: Quick Start →
-actionLink: /api/
+actionLink: /
 features:
 - title: BestPractices
   details: Лучшие практики разработки, советы по код стайлу, приёмам и популярным подходам работы в React
@@ -16,5 +16,5 @@ features:
 - title: Cases
   details: Сборник реальных кейсов по решению популярных задач
 
-footer: Made by E5war5IT with ❤️
+footer: Made by jGate with ❤️
 ---
